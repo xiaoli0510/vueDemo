@@ -1,3 +1,10 @@
+// 此文件是webpack基本配置文件，为了给webpack.dev.conf.js（开发文件）和webpack.prod.conf.js（打包文件）提供方便
+//功能有：
+// 1.配置webpack编译入口，单/多入口文件
+// 2.配置webpack输出路径和命名规则
+// 3.配置resolve解析 解析不带后缀名的文件
+// 4.配置解析各种文件的规则
+// 5.阻止webpack注入无用的setImmediate
 'use strict'
 const path = require('path')//引入node path模块
 const utils = require('./utils')
